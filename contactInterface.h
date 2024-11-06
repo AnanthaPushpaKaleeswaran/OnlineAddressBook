@@ -9,4 +9,5 @@ public:
 	virtual void deleteContact() = 0;
 	virtual void editContact() = 0;
 	virtual void viewContacts() = 0;
+	virtual void viewByGroup() = 0;
 };

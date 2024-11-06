@@ -1,2 +1,3 @@
 ﻿  user.cpp
+C:\Users\DELL\source\repos\OnlineAddressBook\OnlineAddressBook\user.cpp(235,16): warning C4305: 'return': truncation from 'int' to 'bool'
   OnlineAddressBook.vcxproj -> C:\Users\DELL\source\repos\OnlineAddressBook\x64\Debug\OnlineAddressBook.exe

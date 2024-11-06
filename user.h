@@ -11,5 +11,4 @@ public:
 
 	bool addUser();
 	bool validateUser();
-	string encryption();
 };

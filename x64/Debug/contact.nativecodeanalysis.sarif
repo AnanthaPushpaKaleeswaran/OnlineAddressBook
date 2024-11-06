@@ -1,0 +1,59 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.41.34123.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///c:/users/dell/source/repos/onlineaddressbook/onlineaddressbook/contact.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "01b67178e20ffaa3b3d1ff6f4469b5eb727801763a0b9c528aa934bb79ee1fda"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/dell/source/repos/onlineaddressbook/sqlite/sqlite3.h"
+          },
+          "hashes": {
+            "sha-256": "9bcec02d51f4328941ba24b8fac7afcf78e4f0ff2148cfc1a63329fca9d0b766"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/dell/source/repos/onlineaddressbook/onlineaddressbook/contact.h"
+          },
+          "hashes": {
+            "sha-256": "5f015cd4ddbebf40b1c5062ba9f773cb5331bcfc7a0e9dc205da898d343cc6e3"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/dell/source/repos/onlineaddressbook/onlineaddressbook/contactinterface.h"
+          },
+          "hashes": {
+            "sha-256": "b1c927587014014f87da6c3c646b0a92d397bf93ecaed49bd971aab9a62ef661"
+          }
+        }
+      ]
+    }
+  ]
+}

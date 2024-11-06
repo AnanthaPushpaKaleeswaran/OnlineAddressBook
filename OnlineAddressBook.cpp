@@ -7,18 +7,22 @@
 using namespace std;
 
 void getInput(string* email, string* password);
-void getContact(string* name, string* phoneNo, string* address);
+void getContact(string* name, string* phoneNo, string* address,string* group);
 
 class onlineAddressBook : public user,public contact{
 public:
+	//set the user
 	void setUser(string email, string password) {
 		this->email = email;
 		this->password = password;
 	}
-	void setContact(string name, string phoneNo, string address) {
+
+	//set the contact
+	void setContact(string name, string phoneNo, string address,string group) {
 		this->name = name;
 		this->phoneNo = phoneNo;
 		this->address = address;
+		this->group = group;
 	}
 };
 
@@ -28,7 +32,7 @@ int main()
 	while (1) {
 		cout << "1.Login" << endl << "2.Signup" << endl << "3.Exit" << endl;
 		cout << "Enter your choice : ";
-
+		//get the type
 		int type;
 		string email;
 		string password;
@@ -53,6 +57,7 @@ int main()
 			return 0;
 		}
 		cout << "-------------------------------------------------------------------!"<<endl<<endl;
+		
 		if (ok) {
 			break;
 		}
@@ -68,11 +73,12 @@ int main()
 		string name;
 		string phoneNo;
 		string address;
+		string group;
 		switch (choice) {
 		
 		case 1:
-			getContact(&name, &phoneNo, &address);
-			bookObj.setContact(name, phoneNo, address);
+			getContact(&name, &phoneNo, &address, &group);
+			bookObj.setContact(name, phoneNo, address,group);
 			bookObj.addContact();
 			break;
 
@@ -101,15 +107,17 @@ int main()
 	return 0;
 }
 
+//getting the input for user
 void getInput(string* email,string* password) {
-	cout << "Enter your name : ";
+	cout << "Enter your email : ";
 	cin >> *email;
 
 	cout << "Enter your password : ";
 	cin >> *password;
 }
 
-void getContact(string* name, string* phoneNo,string* address) {
+//getting the input for contact
+void getContact(string* name, string* phoneNo,string* address,string* group) {
 	cout << "Enter the name : ";
 	cin >> *name;
 
@@ -118,6 +126,9 @@ void getContact(string* name, string* phoneNo,string* address) {
 
 	cout << "Enter the address : ";
 	cin >> *address;
+
+	cout << "Enter the group : ";
+	cin >> *group;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
